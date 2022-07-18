@@ -33,12 +33,6 @@ def calculate_pvalues(df):
 print('correlation engine 1')
 print(calculate_pvalues(df[(df.unitid ==1)]))
 
-print('correlation engine 3')
-print(calculate_pvalues(df[(df.unitid ==5)]))
-
-print('correlation engine 10')
-print(calculate_pvalues(df[(df.unitid ==10)]))
-
 # showing correlation
 import matplotlib.pyplot as plt
 import seaborn as sns
