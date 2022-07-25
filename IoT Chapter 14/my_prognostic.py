@@ -70,7 +70,7 @@ def select_feature(df):
     X = array[:,0:-1]
     y = array[:,-1]
     # perform feature selection
-    rfe = RFE(RandomForestRegressor(n_estimators=50, random_state=1), 4)
+    rfe = RFE(RandomForestRegressor(n_estimators=50, random_state=1),n_features_to_select=4)
     fit = rfe.fit(X, y)
     # report selected features
     print('Selected Features:')
